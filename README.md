@@ -3,7 +3,7 @@
 
 A terminal-based Chess game implemented in C++, featuring all standard moves, turn-based gameplay, and core logic for piece movement and rules. This project demonstrates object-oriented design, logic implementation for board games, and the use of enums, classes, and other foundational C++ concepts.
 
-Project Overview
+<b>Project Overview</b>
 
 This chess game was designed as an exercise in C++ programming, focusing on object-oriented design and logic-based programming for a board game. The implementation includes basic chess rules, a board display, and turn-based functionality for two players. Players can execute standard moves for each piece and are prompted for invalid moves, ensuring an interactive and correct chess experience.
 Features
