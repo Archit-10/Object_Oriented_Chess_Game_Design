@@ -3,7 +3,7 @@
 
 A terminal-based Chess game implemented in C++, featuring all standard moves, turn-based gameplay, and core logic for piece movement and rules. This project demonstrates object-oriented design, logic implementation for board games, and the use of enums, classes, and other foundational C++ concepts.
 
-<b>Project Overview</b>
+<h2><strong>Project Overview</strong></h2>
 
 This chess game was designed as an exercise in C++ programming, focusing on object-oriented design and logic-based programming for a board game. The implementation includes basic chess rules, a board display, and turn-based functionality for two players. Players can execute standard moves for each piece and are prompted for invalid moves, ensuring an interactive and correct chess experience.
 Features
@@ -14,7 +14,7 @@ Features
     User-Friendly Console Output: The board is displayed in an easy-to-understand format with pieces represented by unique characters (e.g., K for White King, k for Black King).
     Replay Option: After game completion, players can start a new game or exit.
 
-Installation
+<h2><strong>Installation</strong></h2>
 Prerequisites
 
     C++ Compiler: Ensure you have a C++ compiler like g++ installed.
@@ -45,7 +45,7 @@ bash
 
     ./chess_game
 
-Usage
+<h2><strong>Usage</strong></h2>
 
 Once the game starts, players will be prompted to enter their moves in a xyxy format, where x1, y1 are the coordinates of the piece to move, and x2, y2 are the destination coordinates. For example:
 
@@ -72,7 +72,7 @@ x:
 White's turn
 Type in your move as a single four character string. Use x-coordinates first in each pair.
 
-Class Structure and Logic
+<h2><strong>Class Structure and Logic</strong></h2>
 
 The game is structured using two main classes: Square and Board.
 Square Class
@@ -90,7 +90,7 @@ Represents the chessboard itself, containing an 8x8 array of Square objects. Key
     setBoard(): Initializes the starting position of pieces on the board.
     movePiece() methods for each piece (e.g., movePawn, moveRook): Defines the movement logic and validation for each type of piece.
 
-Future Enhancements
+<h2><strong>Future Enhancements</strong></h2>
 
 Potential features for extending this project include:
 
