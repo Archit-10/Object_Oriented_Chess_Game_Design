@@ -25,11 +25,11 @@
 
 <ol>
   <li><strong>Clone the repository:</strong>
-    <pre><code>git clone https://github.com/your-username/command-line-chess.git
+    <pre><code>git clone https://github.com/your-username/Object_Oriented_Chess_Game_Design.git
 cd command-line-chess</code></pre>
   </li>
   <li><strong>Compile the code:</strong>
-    <pre><code>g++ main.cpp -o chess</code></pre>
+    <pre><code>g++ chess_design.cpp -o chess</code></pre>
   </li>
   <li><strong>Run the game:</strong>
     <pre><code>./chess</code></pre>
