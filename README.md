@@ -1,100 +1,60 @@
-# Object_Oriented_Chess_Game_Design
+<h1>♔ Command Line Chess Game</h1>
 
+<p>
+  Welcome to <strong>Command Line Chess</strong>, where classic chess meets the terminal! This project is a fully functional, C++-based chess game designed with a minimalist interface, challenging AI, and an intuitive gameplay experience for the terminal.
+</p>
 
-A terminal-based Chess game implemented in C++, featuring all standard moves, turn-based gameplay, and core logic for piece movement and rules. This project demonstrates object-oriented design, logic implementation for board games, and the use of enums, classes, and other foundational C++ concepts.
+<h2>🎮 Key Features</h2>
 
-<h2><strong>Project Overview</strong></h2>
+<ul>
+  <li><strong>User-Friendly Interface</strong>: The board is displayed with clear, easy-to-read coordinates, making navigation seamless for players of all levels.</li>
+  <li><strong>Smart Turn Management</strong>: Each player is prompted to enter moves in a straightforward four-character format (e.g., <code>0715</code>), simplifying interaction.</li>
+  <li><strong>Fully Functional Pieces</strong>: All standard chess pieces are implemented with their unique movement rules—pawns, rooks, knights, bishops, queens, and kings.</li>
+  <li><strong>Win Detection</strong>: Automatically detects checkmates, declaring the victor in style.</li>
+</ul>
 
-This chess game was designed as an exercise in C++ programming, focusing on object-oriented design and logic-based programming for a board game. The implementation includes basic chess rules, a board display, and turn-based functionality for two players. Players can execute standard moves for each piece and are prompted for invalid moves, ensuring an interactive and correct chess experience.
-Features
+<h2>📦 Project Structure</h2>
 
-    Piece Movement: Implements movement logic for all chess pieces (King, Queen, Bishop, Knight, Rook, and Pawn).
-    Validation of Moves: Checks for out-of-bound moves, invalid captures, and ensures players move their pieces.
-    Turn Management: Alternates turns between White and Black, with win conditions when a King is captured.
-    User-Friendly Console Output: The board is displayed in an easy-to-understand format with pieces represented by unique characters (e.g., K for White King, k for Black King).
-    Replay Option: After game completion, players can start a new game or exit.
+<ul>
+  <li><b>chess.h</b>: Houses the core classes, enums, and method definitions, encapsulating the chess board's structure and each piece’s behavior.</li>
+  <li><b>Square and Board Classes</b>: Carefully crafted classes that manage board layout, piece positioning, and move validity for each player.</li>
+  <li><b>main.cpp</b>: The entry point for launching the game, initializing the board, and providing an interactive session for players to make moves.</li>
+</ul>
 
-<h2><strong>Installation</strong></h2>
-Prerequisites
+<h2>🛠️ Installation & Setup</h2>
 
-    C++ Compiler: Ensure you have a C++ compiler like g++ installed.
+<ol>
+  <li><strong>Clone the repository:</strong>
+    <pre><code>git clone https://github.com/your-username/command-line-chess.git
+cd command-line-chess</code></pre>
+  </li>
+  <li><strong>Compile the code:</strong>
+    <pre><code>g++ main.cpp -o chess</code></pre>
+  </li>
+  <li><strong>Run the game:</strong>
+    <pre><code>./chess</code></pre>
+  </li>
+</ol>
 
-Setup Instructions
+<h2>👾 Gameplay Instructions</h2>
 
-    Clone this repository:
+<ul>
+  <li><strong>Move Input</strong>: Players enter moves as a single, four-character string, indicating the source and destination coordinates. For example, <code>0715</code> moves the piece from x=0, y=7 to x=1, y=5.</li>
+  <li><strong>Win Condition</strong>: Capture the opponent's king to win the game! The board updates dynamically, showcasing each move in real-time.</li>
+</ul>
 
-    bash
+<h2>🔥 Behind the Scenes</h2>
 
-git clone https://github.com/username/chess-game.git
+<ul>
+  <li><strong>Efficient Data Structures</strong>: A compact 8x8 grid and an enum-based design allow for fast lookups and efficient memory usage.</li>
+  <li><strong>Modular Code</strong>: Clean, modularized code structure for maintainable, scalable development.</li>
+  <li><strong>Robust Move Validation</strong>: Comprehensive move-checking functions ensure that all piece moves adhere to the rules of chess, including blocking paths and valid moves.</li>
+</ul>
 
-Navigate to the project directory:
+<h2>🚀 Future Enhancements</h2>
 
-bash
-
-cd chess-game
-
-Compile the code:
-
-bash
-
-g++ main.cpp chess.cpp -o chess_game
-
-Run the compiled executable:
-
-bash
-
-    ./chess_game
-
-<h2><strong>Usage</strong></h2>
-
-Once the game starts, players will be prompted to enter their moves in a xyxy format, where x1, y1 are the coordinates of the piece to move, and x2, y2 are the destination coordinates. For example:
-
-    Enter 0605 to move a piece from (6,0) to (5,0).
-    Invalid moves will result in an error message, allowing the player to try again.
-
-Controls
-
-    Enter moves directly into the console.
-    Use the format xyxy to specify piece movement, where coordinates range from 0-7 for an 8x8 board.
-
-Sample Console Output
-
-vbnet
-
-   y: 0  1  2  3  4  5  6  7
-x:
- 0   R  H  B  Q  K  B  H  R
- 1   P  P  P  P  P  P  P  P
- 2   •  •  •  •  •  •  •  •
- ...
- 7   r  h  b  q  k  b  h  r
-
-White's turn
-Type in your move as a single four character string. Use x-coordinates first in each pair.
-
-<h2><strong>Class Structure and Logic</strong></h2>
-
-The game is structured using two main classes: Square and Board.
-Square Class
-
-Represents each square on the chessboard, holding information about:
-
-    The piece (Piece enum) occupying the square.
-    The color (Color enum) of the piece.
-
-Board Class
-
-Represents the chessboard itself, containing an 8x8 array of Square objects. Key methods include:
-
-    doMove(): Handles the input and validation of moves.
-    setBoard(): Initializes the starting position of pieces on the board.
-    movePiece() methods for each piece (e.g., movePawn, moveRook): Defines the movement logic and validation for each type of piece.
-
-<h2><strong>Future Enhancements</strong></h2>
-
-Potential features for extending this project include:
-
-    Check and Checkmate Logic: Enhance the game rules to account for checks and checkmates.
-    AI Opponent: Implement an AI that makes strategic moves against the player.
-    Graphical Interface: Transition from the console to a GUI-based display using libraries like SFML.
-    Save/Load Feature: Add functionality to save the game's state and resume later.
+<ul>
+  <li><strong>AI Opponent</strong>: Implementing AI to allow single-player mode against the computer.</li>
+  <li><strong>Advanced Chess Rules</strong>: Adding support for special moves like castling, en passant, and pawn promotion.</li>
+  <li><strong>Move History & Undo Feature</strong>: Enable players to review move history and undo their last move.</li>
+</ul>
