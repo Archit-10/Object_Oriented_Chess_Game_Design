@@ -59,3 +59,13 @@ cd Object_Oriented_Chess_Game_Design
   <li><strong>Advanced Chess Rules</strong>: Adding support for special moves like castling, en passant, and pawn promotion.</li>
   <li><strong>Move History & Undo Feature</strong>: Enable players to review move history and undo their last move.</li>
 </ul>
+
+<h2>🤝 Contributions</h2>
+
+<p><strong>Contributions are welcome!</strong> If you'd like to contribute to this project, please follow these guidelines:</p>
+<ol>
+    <li><strong>Fork the repository.</strong></li>
+    <li><strong>Create a new branch</strong> for your feature or bug fix.</li>
+    <li><strong>Submit a pull request</strong> detailing your changes.</li>
+</ol>
+
